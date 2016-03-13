@@ -1,0 +1,5 @@
+In the cross development environment, software development activities are typically performed
+on one computer system, the build-host system, while the result of the development effort
+(produced by the cross tools) is a software system that executes on the target platform.
+
+

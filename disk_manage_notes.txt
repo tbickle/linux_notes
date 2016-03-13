@@ -1,0 +1,15 @@
+goto directory you want to measure
+$ sudo du -hx -t 100000000
+
+find installed packages
+$ dpkg -l | grep <package_name>
+
+determine popularity of installed packages
+$ popularity-contest > out.txt
+
+eliminate all traces of an installed package
+$ sudo apt-get purge <package_name>
+
+eliminate unnecessary packages
+$ sudo apt-get autoremove
+
