@@ -1,0 +1,20 @@
+$ sudo apt-get install build-essential binutils gcc g++ gdb unzip git python2.7-dev
+$ sudo apt-get install autoconf automake deadbeef texinfo
+$ sudo apt-get install zlib1g-dev
+$ sudo apt-get install libncurses5-dev
+
+
+
+RTEMS Source Builder
+In the cross development environment, software development activities are typically performed
+on one computer system, the build-host system, while the result of the development effort
+(produced by the cross tools) is a software system that executes on the target platform.
+
+https://devel.rtems.org/wiki/Developer/Tools/RSB
+$ cd
+$ mkdir -p development/rtems/rsb
+$ cd development/rtems/rsb
+$ git clone git://git.rtems.org/rtems-source-builder.git
+$ cd rtems-source-builder
+$ cd rtems
+$ ../source-builder/sb-set-builder --log=bullshit.txt --prefix=$HOME/development/rtems/4.12 4.12/rtems-sparc
